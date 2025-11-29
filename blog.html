@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog & News - VAHEDA Trust</title>
+  <meta name="description" content="Insights, stories, and updates from VAHEDA Trust. Stay connected with our community and learn about the impact we're making.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">V</div>
+        <span>VAHEDA Trust</span>
+      </a>
+      <nav class="nav-desktop">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="programs.html" class="nav-link">Programs</a>
+        <a href="library.html" class="nav-link">Library</a>
+        <a href="events.html" class="nav-link">Events</a>
+        <a href="get-involved.html" class="nav-link">Get Involved</a>
+        <a href="blog.html" class="nav-link active">Blog</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Toggle menu">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+        </button>
+      </div>
+    </div>
+    <nav id="mobile-nav" class="mobile-nav">
+      <a href="index.html" class="mobile-nav-link">Home</a>
+      <a href="about.html" class="mobile-nav-link">About</a>
+      <a href="programs.html" class="mobile-nav-link">Programs</a>
+      <a href="library.html" class="mobile-nav-link">Library</a>
+      <a href="events.html" class="mobile-nav-link">Events</a>
+      <a href="get-involved.html" class="mobile-nav-link">Get Involved</a>
+      <a href="blog.html" class="mobile-nav-link active">Blog</a>
+      <a href="contact.html" class="mobile-nav-link">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Page Header -->
+    <section class="page-header">
+      <div class="container">
+        <div class="page-header-content">
+          <h1 class="page-title">Blog & News</h1>
+          <p class="page-description">
+            Insights, stories, and updates from VAHEDA Trust. Stay connected with our community and learn about the impact we're making.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Search and Filters -->
+    <section style="padding: 1.5rem 0; border-bottom: 1px solid var(--border);">
+      <div class="container">
+        <div class="search-filters">
+          <div class="search-input-wrapper">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+            <input type="text" id="search-input" class="search-input" placeholder="Search articles...">
+          </div>
+          <div class="filter-buttons">
+            <button class="btn btn-primary btn-sm" data-filter-category="all">All</button>
+            <button class="btn btn-outline btn-sm" data-filter-category="Education">Education</button>
+            <button class="btn btn-outline btn-sm" data-filter-category="Technology">Technology</button>
+            <button class="btn btn-outline btn-sm" data-filter-category="Leadership">Leadership</button>
+            <button class="btn btn-outline btn-sm" data-filter-category="News">News</button>
+            <button class="btn btn-outline btn-sm" data-filter-category="Community">Community</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Blog Grid -->
+    <section class="section">
+      <div class="container">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" data-filterable>
+          
+          <!-- Blog 1 -->
+          <article class="blog-card" data-category="Education" data-searchable="The Importance of Mentorship in Youth Development mentorship programs transforming lives young Muslim students">
+            <img src="assets/images/mentorship_guidance_session.png" alt="Mentorship" class="blog-card-image">
+            <div class="blog-card-content">
+              <span class="blog-card-category">Education</span>
+              <h3 class="blog-card-title">The Importance of Mentorship in Youth Development</h3>
+              <p class="blog-card-excerpt">Discover how mentorship programs are transforming the lives of young Muslim students and preparing them for successful careers.</p>
+              <div class="blog-card-meta">
+                <span>Nov 25, 2024</span>
+                <span>Dr. Ahmed Khan</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Blog 2 -->
+          <article class="blog-card" data-category="News" data-searchable="Building Future Leaders Our Vision for 2025 ambitious plans expand programs students India">
+            <img src="assets/images/leadership_training_workshop.png" alt="Leadership" class="blog-card-image">
+            <div class="blog-card-content">
+              <span class="blog-card-category">News</span>
+              <h3 class="blog-card-title">Building Future Leaders: Our Vision for 2025</h3>
+              <p class="blog-card-excerpt">A look at our ambitious plans to expand programs and reach more students across India, including new initiatives.</p>
+              <div class="blog-card-meta">
+                <span>Nov 20, 2024</span>
+                <span>Fatima Zahra</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Blog 3 -->
+          <article class="blog-card" data-category="Technology" data-searchable="Tech Skills for Tomorrow Why AI Education Matters artificial intelligence digital literacy Muslim youth">
+            <img src="assets/images/tech_bootcamp_workshop_session.png" alt="Technology" class="blog-card-image">
+            <div class="blog-card-content">
+              <span class="blog-card-category">Technology</span>
+              <h3 class="blog-card-title">Tech Skills for Tomorrow: Why AI Education Matters</h3>
+              <p class="blog-card-excerpt">Understanding the importance of AI and digital literacy for Muslim youth in the modern world.</p>
+              <div class="blog-card-meta">
+                <span>Nov 15, 2024</span>
+                <span>Mohammad Irfan</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Blog 4 -->
+          <article class="blog-card" data-category="Community" data-searchable="Community Service Making a Difference Together stories initiatives giving back leadership skills">
+            <img src="assets/images/community_service_volunteers.png" alt="Community Service" class="blog-card-image">
+            <div class="blog-card-content">
+              <span class="blog-card-category">Community</span>
+              <h3 class="blog-card-title">Community Service: Making a Difference Together</h3>
+              <p class="blog-card-excerpt">Stories from our community service initiatives and how students are giving back while developing leadership skills.</p>
+              <div class="blog-card-meta">
+                <span>Nov 10, 2024</span>
+                <span>Aisha Siddiqui</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Blog 5 -->
+          <article class="blog-card" data-category="Leadership" data-searchable="Islamic Values in Modern Leadership traditional principles justice consultation service contemporary practices">
+            <img src="assets/images/muslim_students_learning_together.png" alt="Islamic Leadership" class="blog-card-image">
+            <div class="blog-card-content">
+              <span class="blog-card-category">Leadership</span>
+              <h3 class="blog-card-title">Islamic Values in Modern Leadership</h3>
+              <p class="blog-card-excerpt">How traditional Islamic principles of justice, consultation, and service can guide contemporary leadership practices.</p>
+              <div class="blog-card-meta">
+                <span>Nov 5, 2024</span>
+                <span>Dr. Ahmed Khan</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Blog 6 -->
+          <article class="blog-card" data-category="Success Stories" data-searchable="Student Success Story From Madrassa to Tech Industry inspiring journey bridged traditional Islamic education modern technology">
+            <img src="assets/images/mentorship_guidance_session.png" alt="Success Story" class="blog-card-image">
+            <div class="blog-card-content">
+              <span class="blog-card-category">Success Stories</span>
+              <h3 class="blog-card-title">Student Success Story: From Madrassa to Tech Industry</h3>
+              <p class="blog-card-excerpt">The inspiring journey of a student who bridged traditional Islamic education with modern technology skills.</p>
+              <div class="blog-card-meta">
+                <span>Oct 30, 2024</span>
+                <span>Fatima Zahra</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Blog 7 -->
+          <article class="blog-card" data-category="Policy" data-searchable="Understanding Your Rights Constitution Awareness constitutional rights civic responsibilities Policy Law Program">
+            <img src="assets/images/leadership_training_workshop.png" alt="Constitution" class="blog-card-image">
+            <div class="blog-card-content">
+              <span class="blog-card-category">Policy</span>
+              <h3 class="blog-card-title">Understanding Your Rights: Constitution Awareness</h3>
+              <p class="blog-card-excerpt">Key insights from our Policy & Law Awareness Program on understanding constitutional rights and civic responsibilities.</p>
+              <div class="blog-card-meta">
+                <span>Oct 25, 2024</span>
+                <span>Advocate Sarah Khan</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Blog 8 -->
+          <article class="blog-card" data-category="Education" data-searchable="The Power of Peer Learning in Education Madrassa-School Peer Mentorship Program bridges traditional modern education">
+            <img src="assets/images/muslim_students_learning_together.png" alt="Peer Learning" class="blog-card-image">
+            <div class="blog-card-content">
+              <span class="blog-card-category">Education</span>
+              <h3 class="blog-card-title">The Power of Peer Learning in Education</h3>
+              <p class="blog-card-excerpt">How our Madrassa-School Peer Mentorship Program is creating bridges between traditional and modern education systems.</p>
+              <div class="blog-card-meta">
+                <span>Oct 20, 2024</span>
+                <span>Mohammad Irfan</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Blog 9 -->
+          <article class="blog-card" data-category="Events" data-searchable="Annual Leadership Summit 2024 Highlights biggest event 500 participants inspiring speakers transformative workshops">
+            <img src="assets/images/community_service_volunteers.png" alt="Summit Highlights" class="blog-card-image">
+            <div class="blog-card-content">
+              <span class="blog-card-category">Events</span>
+              <h3 class="blog-card-title">Annual Leadership Summit 2024: Highlights</h3>
+              <p class="blog-card-excerpt">Recap of our biggest event of the year with 500+ participants, inspiring speakers, and transformative workshops.</p>
+              <div class="blog-card-meta">
+                <span>Oct 15, 2024</span>
+                <span>Aisha Siddiqui</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- No Results -->
+        <div id="no-results" class="no-results" style="display: none;">
+          <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          <h3>No articles found</h3>
+          <p>Try adjusting your search or filters to find what you're looking for.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <div class="logo-icon">V</div>
+            <span>VAHEDA Trust</span>
+          </a>
+          <p class="footer-description">Empowering Muslim youth through innovative educational programs.</p>
+        </div>
+        <div>
+          <h4 class="footer-title">Quick Links</h4>
+          <nav class="footer-links">
+            <a href="about.html" class="footer-link">About Us</a>
+            <a href="programs.html" class="footer-link">Programs</a>
+            <a href="events.html" class="footer-link">Events</a>
+            <a href="contact.html" class="footer-link">Contact</a>
+          </nav>
+        </div>
+        <div>
+          <h4 class="footer-title">Programs</h4>
+          <nav class="footer-links">
+            <a href="programs.html#leadership" class="footer-link">Leadership</a>
+            <a href="programs.html#tech" class="footer-link">Technology</a>
+            <a href="programs.html#mentorship" class="footer-link">Mentorship</a>
+          </nav>
+        </div>
+        <div>
+          <h4 class="footer-title">Get Involved</h4>
+          <nav class="footer-links">
+            <a href="get-involved.html#donate" class="footer-link">Donate</a>
+            <a href="get-involved.html#volunteer" class="footer-link">Volunteer</a>
+            <a href="get-involved.html#partner" class="footer-link">Partner</a>
+          </nav>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 VAHEDA Trust. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
