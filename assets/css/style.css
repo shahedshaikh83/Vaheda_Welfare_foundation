@@ -302,11 +302,12 @@ p {
 }
 
 .logo-icon {
-  width: 40px;
+  width: auto;
   height: 40px;
   background-color: var(--primary);
   color: white;
   display: flex;
+  object-fit: contain;
   align-items: center;
   justify-content: center;
   border-radius: var(--radius-md);
