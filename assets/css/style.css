@@ -303,14 +303,14 @@ p {
 
 .logo-icon {
   width: auto;
-  height: 40px;
+  height: 70px;
   background-color: var(--primary);
   color: white;
   display: flex;
   object-fit: contain;
   align-items: center;
   justify-content: center;
-  border-radius: var(--radius-md);
+  /* border-radius: var(--radius-md); */
   font-family: var(--font-display);
   font-size: 1.5rem;
   font-weight: 700;
@@ -767,6 +767,7 @@ p {
    PROGRAM CARDS
    =================================== */
 .program-card {
+  
   position: relative;
   overflow: hidden;
   border-radius: var(--radius-lg);
@@ -774,6 +775,16 @@ p {
   border: 1px solid var(--border);
   transition: all var(--transition-normal);
 }
+
+/* upcoming program blur */
+.program-card-upcoming {
+  /* filter:blur(3px); */
+  pointer-events:  /* disable clicks */
+  /* opacity: 0.8; */
+}
+
+
+
 
 .program-card:hover {
   box-shadow: var(--shadow-xl);
