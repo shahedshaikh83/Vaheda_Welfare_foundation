@@ -774,7 +774,44 @@ p {
   background: var(--card);
   border: 1px solid var(--border);
   transition: all var(--transition-normal);
+  /* new line added for blur effect of card */
+  border-radius: 16px;
+  overflow: hidden;
 }
+
+/* for the blur effect */
+
+/* Blur everything inside the card */
+.program-card.upcoming > * {
+  filter: blur(2px);
+  opacity: 0.7;
+  pointer-events: none;
+}
+
+/* Make overlay text clear */
+.program-card.upcoming .overlay-text {
+  filter: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.85);
+  color: white;
+  padding: 12px 22px;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: 600;
+  z-index: 20;
+  pointer-events: none;
+}
+
+
+
+
+
+
+
+
 
 /* upcoming program blur */
 .program-card-upcoming {
@@ -1785,4 +1822,29 @@ p {
 .map-placeholder svg {
   width: 48px;
   height: 48px;
+}
+
+
+.btn-whatsapp {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #25D366;
+  color: #ffffff;
+  border: 2px solid #25D366;
+  padding: 10px 18px;
+  border-radius: 6px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn-whatsapp:hover {
+  background-color: #1ebe5d;
+  border-color: #1ebe5d;
+  transform: translateY(-1px);
+}
+
+.btn-whatsapp svg {
+  flex-shrink: 0;
 }
